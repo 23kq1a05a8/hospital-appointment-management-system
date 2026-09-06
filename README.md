@@ -47,6 +47,7 @@ HOSPITAL_APPOINTMENT_SYSTEM/
 ├── app.py
 ├── .gitignore
 ├── README.md
+├── requirements.txt
 │
 ├── templates/
 │   ├── index.html
