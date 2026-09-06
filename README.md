@@ -45,7 +45,6 @@ The application uses MySQL with the following tables:
 HOSPITAL_APPOINTMENT_SYSTEM/
 │
 ├── app.py
-├── .env
 ├── .gitignore
 ├── README.md
 │
