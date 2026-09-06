@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments</title>
+</head>
+<body>
+
+    <h1>Appointment Management</h1>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Specialization</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        {% for appointment in appointments %}
+
+        <tr>
+
+            <td>{{ appointment.appointment_id }}</td>
+            <td>{{ appointment.patient_name }}</td>
+            <td>{{ appointment.doctor_name }}</td>
+            <td>{{ appointment.specialization }}</td>
+            <td>{{ appointment.appointment_date }}</td>
+            <td>{{ appointment.appointment_time }}</td>
+            <td>{{ appointment.reason }}</td>
+            <td>{{ appointment.status }}</td>
+
+            <td>
+                {% if appointment.status == "Booked" %}
+
+                <form method="POST"
+                      action="/cancel-appointment/{{ appointment.appointment_id }}">
+
+                    <button type="submit">Cancel</button>
+
+                </form>
+
+                {% else %}
+
+                Cancelled
+
+                {% endif %}
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

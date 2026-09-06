@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #1f3c88;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1f3c88;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162d68;
+}
+
+a {
+    color: #1f3c88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #1f3c88;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.dashboard {
+    width: 700px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard a {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #1f3c88;
+    font-size: 18px;
+}
+
+.dashboard a:hover {
+    background-color: #1f3c88;
+    color: white;
+}
